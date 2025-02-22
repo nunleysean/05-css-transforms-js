@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #252547, #1a1a2e);
+  font-family: 'Raleway', sans-serif;
+  color: #e0e7ff;
+}
+
+.magic-ball {
+  width: 400px;
+  height: 400px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(65, 105, 225, 0.3), 0 0 60px rgba(65, 105, 225, 0.2), 0 0 90px rgba(65, 105, 225, 0.1);
+}
+
+.answer {
+  width: 240px;
+  height: 240px;
+  background: #1e3c8d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e0e7ff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(65, 105, 225, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.answer:hover {
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(65, 105, 225, 0.6);
+}
+
+.instruction {
+  margin-top: 30px;
+  color: #b6c1e2;
+  font-size: 26px;
+  text-shadow: 0 0 10px rgba(181, 194, 232, 0.3);
+}
