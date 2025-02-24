@@ -26,5 +26,17 @@ const answers = [
 
 // Event listener for the Magic 8-Ball click.
 document.getElementById("magicBall").addEventListener("click", function() {
-  answer.innerText = answers[Math.floor(Math.random() * answers.length)];
+  // Clear the current answer.
+  answer.innerText = "";
+
+  // Add the shake class to the Magic 8-Ball.
+  const magicBall = document.getElementById("magicBall");
+  magicBall.classList.add("shake");
+
+  // Remove the shake class after 1 second.
+  setTimeout(function() {
+    magicBall.classList.remove("shake");
+    // Display a random answer.
+    answer.innerText = answers[Math.floor(Math.random() * answers.length)];
+  }, 1000);
 });

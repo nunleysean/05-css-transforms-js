@@ -54,3 +54,22 @@ body {
   font-size: 26px;
   text-shadow: 0 0 10px rgba(181, 194, 232, 0.3);
 }
+
+/* Shake animation */
+@keyframes shake {
+  0% { transform: translate(2px, 2px) rotate(0deg); }
+  10% { transform: translate(-2px, -3px) rotate(-2deg); }
+  20% { transform: translate(-4px, 1px) rotate(2deg); }
+  30% { transform: translate(4px, 3px) rotate(0deg); }
+  40% { transform: translate(2px, -2px) rotate(2deg); }
+  50% { transform: translate(-2px, 3px) rotate(-2deg); }
+  60% { transform: translate(-4px, 2px) rotate(0deg); }
+  70% { transform: translate(4px, 2px) rotate(-2deg); }
+  80% { transform: translate(-2px, -2px) rotate(2deg); }
+  90% { transform: translate(2px, 3px) rotate(0deg); }
+  100% { transform: translate(2px, -3px) rotate(-2deg); }
+}
+
+.shake {
+  animation: shake 1s;
+}
