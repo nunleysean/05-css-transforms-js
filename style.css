@@ -54,3 +54,21 @@ body {
   font-size: 26px;
   text-shadow: 0 0 10px rgba(181, 194, 232, 0.3);
 }
+
+@keyframes rapid-shake {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-10px, -10px); }
+  20% { transform: translate(10px, 10px); }
+  30% { transform: translate(-10px, 10px); }
+  40% { transform: translate(10px, -10px); }
+  50% { transform: translate(-5px, 5px); }
+  60% { transform: translate(5px, -5px); }
+  70% { transform: translate(-5px, -5px); }
+  80% { transform: translate(5px, 5px); }
+  90% { transform: translate(-2px, 2px); }
+  100% { transform: translate(0, 0); }
+}
+
+.magic-ball.shake {
+  animation: rapid-shake 0.7s ease-in-out;
+}
